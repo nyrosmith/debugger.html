@@ -35,6 +35,10 @@
   color: var(--theme-body-color);
 }
 
+.outline-list h2:hover {
+  background: var(--theme-toolbar-background-hover);
+}
+
 .outline-list__element {
   padding: 3px 10px 3px 10px;
   cursor: default;
