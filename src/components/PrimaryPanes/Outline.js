@@ -75,11 +75,7 @@ export class Outline extends Component<Props> {
     return (
       <div className="outline-list__class" key={klass}>
         <h2
-          onClick={
-            classInfo && !classFunc
-              ? () => this.selectItem(classInfo.location)
-              : null
-          }
+          onClick={classInfo ? () => this.selectItem(classInfo.location) : null}
         >
           {classFunc ? this.renderFunction(classFunc) : `class ${klass}`}
         </h2>
